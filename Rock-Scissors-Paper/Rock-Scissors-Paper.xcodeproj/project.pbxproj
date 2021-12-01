@@ -13,6 +13,8 @@
 		AB3BD6BD275775E0001DFE1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3BD6BB275775E0001DFE1B /* Main.storyboard */; };
 		AB3BD6BF275775E1001DFE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3BD6BE275775E1001DFE1B /* Assets.xcassets */; };
 		AB3BD6C2275775E1001DFE1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3BD6C0275775E1001DFE1B /* LaunchScreen.storyboard */; };
+		AB3BD6CE27578057001DFE1B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3BD6CD27578057001DFE1B /* Game.swift */; };
+		AB3BD6D02757806A001DFE1B /* GameTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3BD6CF2757806A001DFE1B /* GameTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AB3BD6BE275775E1001DFE1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB3BD6C1275775E1001DFE1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB3BD6C3275775E1001DFE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3BD6CD27578057001DFE1B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		AB3BD6CF2757806A001DFE1B /* GameTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +66,19 @@
 				AB3BD6BB275775E0001DFE1B /* Main.storyboard */,
 				AB3BD6BE275775E1001DFE1B /* Assets.xcassets */,
 				AB3BD6C0275775E1001DFE1B /* LaunchScreen.storyboard */,
+				AB3BD6C927577781001DFE1B /* Model */,
 				AB3BD6C3275775E1001DFE1B /* Info.plist */,
 			);
 			path = "Rock-Scissors-Paper";
+			sourceTree = "<group>";
+		};
+		AB3BD6C927577781001DFE1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB3BD6CD27578057001DFE1B /* Game.swift */,
+				AB3BD6CF2757806A001DFE1B /* GameTool.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3BD6D02757806A001DFE1B /* GameTool.swift in Sources */,
 				AB3BD6BA275775E0001DFE1B /* ViewController.swift in Sources */,
+				AB3BD6CE27578057001DFE1B /* Game.swift in Sources */,
 				AB3BD6B6275775E0001DFE1B /* AppDelegate.swift in Sources */,
 				AB3BD6B8275775E0001DFE1B /* SceneDelegate.swift in Sources */,
 			);
