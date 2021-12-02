@@ -28,7 +28,9 @@ func compareGameResult() -> GameResult {
        (playerHand == .scicssors && computerHand == .rock),
        (playerHand == .paper && computerHand == .scicssors) {
         return gameResult.win
-    } else if playerHand == computerHand {
+    }
+    
+    if playerHand == computerHand {
         return gameResult.draw
     } else {
         return gameResult.lose
@@ -36,21 +38,23 @@ func compareGameResult() -> GameResult {
 }
 
 // 점수 정산
-func calculateScore() -> Int {
+func calculateScore() {
     let gameResult = compareGameResult()
     switch gameResult {
     case .win:
         Score.player += 1
-        return Score.player
     case .lose:
         Score.computer += 1
-        return Score.player
     case .draw:
-        return Score.player
+        break
     }
 }
 
 // 게임 진행
 func playGame() {
-    
+    while Score.player < 3 || Score.computer < 3 {
+        calculateScore()
+    }
 }
+
+
